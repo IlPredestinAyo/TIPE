@@ -69,7 +69,7 @@ class F1 :
 
 rb = F1()
 ferrari = F1(y=650)
-ferrari.coef_frein -= .2
+ferrari.coef_frein -= 1
 ferrari.angle -= .5
 
 # Boucle principale
@@ -103,8 +103,8 @@ while going:
 
     #coloration
     i+=.01
-    pygame.draw.line(screen2, (127+int(127*cos(i)), 127+int(127*cos(i + .66*pi)), 127+int(127*cos(i + 1.33 * pi)), 255), (int(rb.x), int(rb.y)), (x, y), 5)
-    pygame.draw.line(screen2, (127+int(127*cos(i+1)), 127+int(127*cos(i+1 + .66*pi)), 127+int(127*cos(i+1 + 1.33 * pi)), 255), (int(ferrari.x), int(ferrari.y)), (xf, yf), 5)
+    #pygame.draw.line(screen2, (127+int(127*cos(i)), 127+int(127*cos(i + .66*pi)), 127+int(127*cos(i + 1.33 * pi)), 255), (int(rb.x), int(rb.y)), (x, y), 5)
+    pygame.draw.line(screen2, (127+int(127*cos(i+1)), 127+int(127*cos(i+1 + .66*pi)), 127+int(127*cos(i+1 + 1.33 * pi)), 255), (int(ferrari.x), int(ferrari.y)), (xf, yf), 3)
 
     # Gestion des limites de l'écran (téléportation aux bords)
     rb.x %= WIDTH
