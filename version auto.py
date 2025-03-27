@@ -66,7 +66,6 @@ class F1 :
         self.angle +=(1/self.capteur_avant())*(self.capteur_droit()-self.capteur_gauche())*self.coef_angle
         screen.set_at((int(self.x), int(self.y)), 255**2)
 
-
 rb = F1()
 ferrari = F1(y=650)
 ferrari.coef_frein -= .2
