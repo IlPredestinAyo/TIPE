@@ -77,7 +77,7 @@ going = True
 clock = pygame.time.Clock()
 while going:
     screen.blit(background_image, (0, 0))  # img de fond
-    going = rb.detecteur()
+    #going = rb.detecteur()
 
     # Gestion des événements
     for event in pygame.event.get():
